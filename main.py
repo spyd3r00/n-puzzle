@@ -7,29 +7,23 @@ dx = [-1, 1, 0, 0]
 dy = [0, 0, 1, -1]
 
 # Global variables holding algorithms
-dfs_counter = 0
+
 bfs_counter = 0
-euclid_counter = 0
 manhattan_counter = 0
 
-dfs_path = []
+
 bfs_path = []
-euclid_path = []
 manhattan_path = []
 
-dfs_cost = 0
+
 bfs_cost = 0
-euclid_cost = 0
 manhattan_cost = 0
 
-dfs_depth = 0
+
 bfs_depth = 0
-euclid_depth = 0
 manhattan_depth = 0
 
-time_dfs = 0
 time_bfs = 0
-time_euclid = 0
 time_manhattan = 0
 
 
@@ -341,19 +335,4 @@ def AStarSearch_euclid(inputState):
 
     return 0
 
-# start_time=time.time()
-# for i in range(0,10000):
-#     print(1)
-# print(start_time-time.time())
 
-# print(DFS("702853641"))
-# print(time_dfs)
-# print(BFS("702853641"))
-# print(time_bfs)
-# print(AStarSearch_euclid("702853641"))
-# print(time_euclid)
-# print(AStarSearch_manhattan("702853641"))
-# print(time_manhattan)
-
-
-# unsolvable 103245678, 702853641
