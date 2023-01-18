@@ -207,17 +207,6 @@ class InterfaceApp:
         else:
             pass
 
-    def resetStepCounter(self, event=None):
-        """
-        Invoked at pressing reset button. Resets the grid to the initial state and the step counter to 0
-        """
-        global statepointer
-        if statepointer > 0:
-            self.stopFastForward()
-            statepointer = 0
-            self.refreshFrame()
-
-
     # =============================================================================================================== #
     ###     Helper Functions     ###
 
