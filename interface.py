@@ -132,15 +132,6 @@ class InterfaceApp:
         app.gif_loading.configure(image=frame)
         app.appFrame.after(50, app.refreshGIF, ind)
 
-    def prevSequence(self, event=None):
-        """
-        Displays the previous state on the grid
-        """
-        global statepointer
-        if statepointer > 0:
-            self.stopFastForward()
-            statepointer -= 1
-            self.refreshFrame()
 
     def solve(self, event=None):
         """
@@ -225,7 +216,6 @@ class InterfaceApp:
             self.stopFastForward()
             statepointer = 0
             self.refreshFrame()
-
 
 
     # =============================================================================================================== #
